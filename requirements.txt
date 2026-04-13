@@ -1,0 +1,29 @@
+# ── Core ─────────────────────────────────────────────────────────────────────
+numpy>=1.26,<2.0
+requests>=2.31
+
+# ── PDF parsing ───────────────────────────────────────────────────────────────
+PyMuPDF>=1.24          # fitz
+
+# ── Vector store ──────────────────────────────────────────────────────────────
+faiss-cpu>=1.8         # use faiss-gpu if CUDA available
+
+# ── UI ────────────────────────────────────────────────────────────────────────
+streamlit>=1.35
+
+# ── Env management ───────────────────────────────────────────────────────────
+python-dotenv>=1.0
+
+# ── Optional / future LLM backends ───────────────────────────────────────────
+# openai>=1.30
+# boto3>=1.34            # Amazon Bedrock
+# llama-cpp-python>=0.2  # local GGUF models
+# sentence-transformers>=3.0  # local embeddings alternative
+
+# Local embedding (replaces HF Inference API)
+sentence-transformers>=3.0
+torch>=2.0          # CPU-only is fine: pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# AWS Bedrock
+boto3>=1.34
+botocore>=1.34

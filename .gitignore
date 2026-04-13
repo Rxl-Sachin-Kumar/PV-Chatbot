@@ -1,0 +1,31 @@
+# Environment variables — NEVER commit
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Large data files (FAERS dataset — download separately)
+data/FAERS/
+data/processed/
+data/raw/
+
+# Vectorstore index (rebuild with scripts/build_index.py)
+vectorstore/faiss_index/
+
+# IDE / OS
+.idea/
+.vscode/
+*.DS_Store
+Thumbs.db
