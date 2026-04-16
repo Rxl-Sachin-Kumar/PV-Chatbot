@@ -27,3 +27,15 @@ torch>=2.0          # CPU-only is fine: pip install torch --index-url https://do
 # AWS Bedrock
 boto3>=1.34
 botocore>=1.34
+
+#-----------
+groq
+streamlit
+faiss-cpu
+sentence-transformers
+pymupdf
+pandas
+numpy
+torch
+torchvision
+torchaudio
